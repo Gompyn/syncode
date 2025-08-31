@@ -23,7 +23,7 @@
 //  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN "if"  ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 
-start: IGNORED? nls? package_clause eos (import_decl eos)* ((function_decl | method_decl | declaration) eos)*
+start: nls? package_clause eos (import_decl eos)* ((function_decl | method_decl | declaration) eos)*
 
 package_clause: package_token NAME
 
